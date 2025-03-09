@@ -20,9 +20,9 @@ const Titulo = () => {
                     <h3>tenemos {viajesDestacados} tours destacados</h3>
                 </div>
                 <div>
-                {datosViajes.map((viaje) => {
-                    return <Tours key={viaje.id} name={viaje.name} image={viaje.image} price={viaje.price} info={viaje.info} destacado={viaje.destacado} /> 
-                })}
+                {datosViajes.map((viaje) => 
+                    <Tours key={viaje.id} name={viaje.name} image={viaje.image} price={viaje.price} info={viaje.info} destacado={viaje.destacado} /> 
+                )}
                 </div>         
             </section>
         </main>
